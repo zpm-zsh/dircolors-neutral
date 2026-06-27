@@ -1,5 +1,11 @@
 # Presentation formats
-.ppt      36
-.pptx     36
-.odp      36
-.gdslides 36
+*.gdslides 36
+*.keynote  36
+*.odp      36
+*.pot      36
+*.potx     36
+*.pps      36
+*.ppsx     36
+*.ppt      36
+*.pptm     36
+*.pptx     36

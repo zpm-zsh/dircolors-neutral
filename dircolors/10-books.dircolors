@@ -1,6 +1,10 @@
 # Book formats
-*.pdf  31
+*.azw  31
+*.azw3 31
+*.cbr  31
+*.cbz  31
 *.djvu 31
 *.epub 31
 *.fb2  31
 *.mobi 31
+*.pdf  31

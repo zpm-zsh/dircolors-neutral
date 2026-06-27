@@ -1,7 +1,14 @@
 # Sublime Text
-*.sublime-workspace 34
 *.sublime-project   34
+*.sublime-workspace 34
 
 # VScode
 *.code-workspace 34
 *launch.json     34
+
+# JetBrains / Visual Studio
+*.csproj  34
+*.idea    34
+*.iml     34
+*.sln     34
+*.vcxproj 34

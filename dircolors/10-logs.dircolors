@@ -1,11 +1,16 @@
+# Logs
+*.err    2;37
+*.log    2;37
+*.stderr 2;37
+*.stdout 2;37
+
 # History
+*.autoenv_authorized 2;37
 *.bash_history       2;37
+*.mysql_history      2;37
+*.node_repl_history  2;37
 *.python_history     2;37
 *.zsh_history        2;37
-*.node_repl_history  2;37
-*.mysql_history      2;37
-*.zsh_history        2;37
-*.autoenv_authorized 2;37
 
 # Pacman
 *.pacnew  2;37

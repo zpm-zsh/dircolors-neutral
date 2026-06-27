@@ -1,2 +1,4 @@
-.directory 34
-.desktop   34
+# Applications
+*.app       34
+*.desktop   34
+*.directory 34

@@ -1,7 +1,18 @@
 # databases
-.sql 35
-
-.db         35
-.sqlite3    35
-.sqlite     35
-.sqlite-wal 35
+*.accdb      35
+*.cql        35
+*.db         35
+*.db3        35
+*.dbf        35
+*.duckdb     35
+*.dump       35
+*.jsonl      35
+*.mdb        35
+*.ndjson     35
+*.parquet    35
+*.psql       35
+*.rdb        35
+*.sql        35
+*.sqlite     35
+*.sqlite-wal 35
+*.sqlite3    35

@@ -1,12 +1,10 @@
 
-
-
 # AWS
-*samconfig.toml 36
+*dev-samconfig.toml  36
 *prod-samconfig.toml 36
-*dev-samconfig.toml 36
+*samconfig.dev.toml  36
 *samconfig.prod.toml 36
-*samconfig.dev.toml 36
+*samconfig.toml      36
 
 # Ruby
 *Gemfile     36
@@ -14,37 +12,90 @@
 *Vagrantfile 36
 
 # Docker
-*Dockerfile 34
+*Containerfile       34
+*Dockerfile          34
+*docker-compose.yaml 36
+*docker-compose.yml  36
 
 # Makefile
-*Makefile    36
+*.mk      36
+*Makefile 36
+
+# Build systems
+*.bazel         36
+*.cmake         36
+*.gradle        36
+*.gradle.kts    36
+*.ninja         36
+*BUILD.bazel    36
+*Brewfile       36
+*CMakeLists.txt 36
+*Caddyfile      36
+*Justfile       36
+*Procfile       36
+*Taskfile.yaml  36
+*Taskfile.yml   36
+*WORKSPACE      36
+*justfile       36
+*meson.build    36
 
 # Rust
-*Cargo.toml  36
 *.rustfmt.toml 36
-*.rvm 36
-*.rvmrc 36
+*.rvm          36
+*.rvmrc        36
+*Cargo.toml    36
 
-# Node
-*.npmrc 36
-*node_modules 36
+# Node / JS
+*.npmignore          36
+*.nvmrc              36
+*node_modules        36
+*package-lock.json   36
+*package.json        36
+*pnpm-lock.yaml      36
+*pnpm-workspace.yaml 36
+*yarn.lock           36
 
-# Eslint
-*.eslintrc.js 36
-*.eslintrc.cjs 36
-*.eslintrc.json 36
-*.eslintrc.yaml 36
-*.eslintrc.yml 36
+# TypeScript
+*tsconfig.*.json 36
+*tsconfig.json   36
 
 # React Native
-*metro.config.js 36
+*metro.config.js        36
 *react-native.config.js 36
 
-# Babel
+# Babel / Jest
 *babel.config.js 36
+*jest.setup.js   36
 
-# Jest
-*jest.setup.js 36
+# Lint / Formatting
+*.commitlintrc       36
+*.commitlintrc.json  36
+*.eslintrc.cjs       36
+*.eslintrc.js        36
+*.eslintrc.json      36
+*.eslintrc.yaml      36
+*.eslintrc.yml       36
+*.prettierrc         36
+*.prettierrc.cjs     36
+*.prettierrc.js      36
+*.prettierrc.json    36
+*.prettierrc.yaml    36
+*.prettierrc.yml     36
+*.stylelintrc        36
+*.stylelintrc.js     36
+*.stylelintrc.json   36
+*.stylelintrc.yaml   36
+*.stylelintrc.yml    36
+*prettier.config.cjs 36
+*prettier.config.js  36
+
+# Python
+*Pipfile            36
+*Pipfile.lock       36
+*poetry.lock        36
+*pyproject.toml     36
+*requirements-*.txt 36
+*requirements.txt   36
 
 # Pod
 *Podfile 36
@@ -53,26 +104,26 @@
 *fstab    36
 *group    36
 *group-   36
+*hostname 36
+*hosts    36
 *passwd   36
 *passwd-  36
 *shadow   36
 *shadow-  36
-*hosts    36
-*hostname 36
 *shells   36
 
-*environment 32
-*profile     32
 *-release    32
 *_release    32
+*environment 32
+*profile     32
 
-*rc.local 33
 *inittab  33
+*rc.local 33
 
 # SSH
-*known_hosts     36
-*config          36
 *authorized_keys 36
+*config          36
+*known_hosts     36
 
 # /etc/hosts.{deny,allow}
 *hosts.allow 32
@@ -80,15 +131,15 @@
 
 # Systemd
 # http://www.freedesktop.org/software/systemd/man/systemd.unit.html
-*.service   34
-*@.service  34
-*.socket    34
-*.swap      34
+*.automount 34
 *.device    34
 *.mount     34
-*.automount 34
-*.target    34
 *.path      34
-*.timer     34
-*.snapshot  34
+*.service   34
 *.slice     34
+*.snapshot  34
+*.socket    34
+*.swap      34
+*.target    34
+*.timer     34
+*@.service  34

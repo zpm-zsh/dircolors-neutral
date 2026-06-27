@@ -1,4 +1,6 @@
 # Special Text Files
-*LICENSE   4;33
-*README    4;33
-*README.md 4;31
+*CHANGELOG    4;33
+*CHANGELOG.md 4;33
+*LICENSE      4;33
+*README       4;33
+*README.md    4;31

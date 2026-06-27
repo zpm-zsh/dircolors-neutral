@@ -5,7 +5,6 @@
 Supported apps:
 
 - dircolors
-- fast-syntax-highlighting
 
 ## Installation
 

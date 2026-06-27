@@ -1,4 +1,16 @@
 # Document formats
-.doc  36
-.docx 36
-.odt  36
+*.adoc    36
+*.doc     36
+*.docx    36
+*.fodt    36
+*.odg     36
+*.odt     36
+*.org     36
+*.pages   36
+*.qmd     36
+*.rmd     36
+*.rst     36
+*.rtf     36
+*.rtfd    36
+*.textile 36
+*.typ     36

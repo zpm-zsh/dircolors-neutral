@@ -1,6 +1,11 @@
 # Spreadsheet formats
-.xlsx 36
-.xls  36
-.ods  36
-.csv  36
-.tsv  36
+*.csv     36
+*.fods    36
+*.numbers 36
+*.ods     36
+*.tsv     36
+*.xls     36
+*.xlsb    36
+*.xlsm    36
+*.xlsx    36
+*.xlt     36
