@@ -4,15 +4,14 @@
 typeset -g ZSH_CACHE_DIR="${ZSH_CACHE_DIR:-${TMPDIR:-/tmp}/zsh-${UID:-user}}"
 typeset -g DIRCOLORS_CACHE_FILE="${DIRCOLORS_CACHE_FILE:-${ZSH_CACHE_DIR}/neutral-dircolors.zsh}"
 
-__dircolors_neutral_plugin_dir() {
-  emulate -L zsh
-  # Standarized $0 handling, following:
-  # https://zdharma-continuum.github.io/Zsh-100-Commits-Club/Zsh-Plugin-Standard.html
-  local script_path
-  script_path="${${ZERO:-${0:#$ZSH_ARGZERO}}:-${(%):-%N}}"
-  script_path="${${(M)script_path:#/*}:-$PWD/$script_path}"
-  print -r -- "${script_path:h}"
-}
+# Standardized $0 handling, following:
+# https://zdharma-continuum.github.io/Zsh-100-Commits-Club/Zsh-Plugin-Standard.html
+# This MUST run at the top level of the plugin file. Inside a function `$0`
+# and `${(%):-%N}` resolve to the function name, not the script path, which
+# breaks directory resolution under antidote/oh-my-zsh (see issue #4).
+0="${${ZERO:-${0:#$ZSH_ARGZERO}}:-${(%):-%N}}"
+0="${${(M)0:#/*}:-$PWD/$0}"
+typeset -g __dircolors_neutral_dir="${0:h}"
 
 __dircolors_neutral_dircolors_command() {
   emulate -L zsh
@@ -35,7 +34,7 @@ __dircolors_neutral_build_cache() {
   emulate -L zsh
 
   local plugin_dir dircolors_command file
-  plugin_dir="$(__dircolors_neutral_plugin_dir)"
+  plugin_dir="${__dircolors_neutral_dir}"
   dircolors_command="$(__dircolors_neutral_dircolors_command)" || return 1
 
   mkdir -p "${ZSH_CACHE_DIR}" || {
@@ -58,7 +57,7 @@ __dircolors_neutral_init() {
   fi
 
   local plugin_dir
-  plugin_dir="$(__dircolors_neutral_plugin_dir)"
+  plugin_dir="${__dircolors_neutral_dir}"
 
   local -a inputs
   inputs=( "${plugin_dir}/dircolors/"*.dircolors(N) "${plugin_dir}/dircolors-neutral.plugin.zsh"(N) )
